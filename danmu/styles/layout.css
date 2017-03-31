@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+}
+#dmtotal{
+	margin:1% 3% 1% 3%;
+	text-align:center;
+}
+#showmsg{
+	width:100%;
+	height:500px;
+	border:1px solid grey;
+	position: relative;
+	overflow:hidden;
+	font-size:28px;
+}
+#dmtext{
+	display:block;
+	margin:20px auto;
+	width:350px;
+	height:30px;
+
+}
+
+.launch,.clear{
+	width:120px;
+	height:30px;
+	font-size:10px;
+	background-color: white;
+	text-align: center;
+	border: 1px solid grey;
+	color:grey;
+}
+p{
+	text-overflow : clip;
+	white-space:nowrap; 
+
+}
