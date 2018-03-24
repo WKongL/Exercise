@@ -42,3 +42,30 @@ a {
 #header .info h1 {
     line-height: 70px
 }
+/* banner */
+
+.banner {
+    margin: 0 auto;
+    margin-top: -105px;
+    padding: 20px;
+    width: 690px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+.banner ul {
+    text-align: center;
+    font-size: 0;
+}
+.banner ul li {
+    display: inline-block;
+    height: 160px;
+    width: 180px;
+    font-size: 14px;
+}
+.banner ul li .feature {
+    margin: 20px auto;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #F5A523;
+}
