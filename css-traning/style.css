@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* header */
+#header {
+    padding: 20px;
+    height: 280px;
+    background: linear-gradient(to bottom, #3A2CAC, #631D9E);
+}
+
+#header nav a {
+    color: #f0f0f0;
+}
+
+#header nav a:hover {
+    color: #f90;
+}
+#header .login {
+    float: right;
+}
+#header nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#header .info {
+    margin: 50px auto;
+    width: 730px;
+    color: #f0f0f0; 
+}
+#header .info ul{
+    float: right;
+}
+#header .info h1 {
+    line-height: 70px
+}
