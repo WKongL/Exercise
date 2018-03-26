@@ -8,6 +8,24 @@ ul {
 a {
     text-decoration: none;
 }
+/* animation */
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn{
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.fadeInDelay {
+    animation-delay: 1s;
+}
 
 /* header */
 #header {
@@ -112,4 +130,27 @@ a {
     font-size: 12px;
     color: #999;
     text-align: center;
+}
+
+/* progress */
+.progress {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -140px;
+    width: 280px;
+    height: 15px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, red 0%, red 33%, yellow 33%, yellow 66%, red 66%, red 100%);
+    background-size: 30px 15px;
+    /* background-repeat: no-repeat; */
+    animation: rolling .6s linear infinite
+}
+@keyframes rolling {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 30px;
+    }
 }
