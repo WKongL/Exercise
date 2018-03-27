@@ -80,6 +80,55 @@
         WKongL @2018
     </footer>
     <div class="progress"></div>
+    <div class="dialogWrapper">
+        <div class="mask"></div>
+        <div class="loginBox">
+            <div class="title">登录</div>
+                <form class="formContent">
+                    <ul>
+                        <li class="username">
+                            <label>用户名</label>
+                            <input type="text" name="username">
+                        </li>
+                        <li class="password">
+                            <label>密码</label>
+                            <input type="password" name="password">
+                        </li>
+                        <li class="buttonWrapper">
+                            <button class="cancel">取消</button>
+                            <button class="comfire">登录</button>
+                        </li>
+                    </ul>
+                </form>
+        </div>
+    </div>
+    <script>
+        window.onload = function (){
+            function progressShow() {
+                document.querySelector('.progress').classList.add('show');
+            }
+            function progressHide() {
+                document.querySelector('.progress').classList.remove('show');
+            }
+            function dialogShow() {
+                document.querySelector('.dialogWrapper').classList.add('show');
+            }
+            function dialogHide() {
+                document.querySelector('.dialogWrapper').classList.remove('show');
+            }
+            document.querySelector('.login').addEventListener('click',function(e) {
+                progressShow();
+                setTimeout(function() {
+                    dialogShow();
+                    progressHide();
+                },1000)
+                e.preventDefault();
+            });
+            document.querySelector('.cancel').addEventListener('click',function(e) {
+                dialogHide();
+                e.preventDefault();
+            })
+        };
+    </script>
 </body>
-
 </html>
